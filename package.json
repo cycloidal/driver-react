@@ -4,11 +4,10 @@
   "author": "Jakob Hohlfeld",
   "description": "React bindings for cycle.js.",
   "license": "MIT",
-  "main": "lib/driver-react.js",
+  "main": "dist/driver-react.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "precompile-lib": "rm -rf lib && mkdir -p lib",
-    "compile-lib": "babel src/ -d lib/",
+    "precompile-lib": "rm -rf dist && mkdir -p dist",
+    "compile-lib": "babel src/ -d dist/",
     "prepublish": "npm run precompile-lib && npm run compile-lib"
   },
   "repository": {
@@ -30,8 +29,7 @@
     "babel-cli": "^6.9.0",
     "babel-preset-es2015": "^6.9.0",
     "babel-preset-react": "^6.5.0",
-    "babel-preset-stage-1": "^6.5.0",
-    "babel-preset-stage-2": "^6.5.0"
+    "babel-preset-stage-1": "^6.5.0"
   },
   "peerDependencies": {
     "react": "^15.0.2",
@@ -40,5 +38,8 @@
   "dependencies": {
     "react": "^15.0.2",
     "rx": "^4.1.0"
-  }
+  },
+  "files": [
+    "dist/"
+  ]
 }
