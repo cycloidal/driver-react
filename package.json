@@ -1,6 +1,6 @@
 {
   "name": "@cycloidal/driver-react",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "author": "Jakob Hohlfeld",
   "description": "React bindings for cycle.js.",
   "license": "MIT",
